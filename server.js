@@ -16,7 +16,7 @@ app.use('/', route);
 
 mongoose.connect("mongodb+srv://seanmac11:NJIuhbvgy1122@cluster0.brdjeem.mongodb.net/PortfolioDB", {useNewURLParser: true, useUnifiedTopology: true})
 .then(() => {
-    app.listen(port, () =>{
+    app.listen(process.env.port, () =>{
         console.log("server is running on 3000")
     })
 })
