@@ -22,18 +22,18 @@
       <div class="container">
         <div class="row">
           <div class="col-5 text-center contactform p-5">
-            <form>
+            <form action="/submitContacts" method="post">
               <h3 class="md-4">Contact us</h3>
-              <input type="text" class="form-control md-4" id="fname" aria-describedby="firtsname" placeholder="First Name">
-              <input type="text" class="form-control md-4" id="lname" aria-describedby="lastname" placeholder="Last Name">
-              <input type="text" class="form-control md-4" id="email" aria-describedby="emailHelp" placeholder="Email">
+              <input type="text" class="form-control md-4" name="fname" aria-describedby="firtsname" placeholder="First Name">
+              <input type="text" class="form-control md-4" name="lname" aria-describedby="lastname" placeholder="Last Name">
+              <input type="text" class="form-control md-4" name="email" aria-describedby="emailHelp" placeholder="Email">
               <label for="selection" class="form-label">Reason for contact:</label>
-              <select class="form-select md-4" aria-label="Default select example">
-                <option selected value="1">Bug</option>
-                <option value="2">Opportunity</option>
-                <option value="3">Connect</option>
+              <select class="form-select md-4" aria-label="Default select example" name="reason">
+                <option selected value="Bug">Bug</option>
+                <option value="Opportunity">Opportunity</option>
+                <option value="Connect">Connect</option>
               </select>
-              <textarea class="form-control md-4" id="exampleFormControlTextarea1" rows="3" placeholder="">Comment</textarea>
+              <textarea class="form-control md-4" name="comment" rows="3" placeholder="">Comment</textarea>
               <div class="d-grid">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
