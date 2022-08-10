@@ -1,0 +1,84 @@
+<%- include('layouts/header.ejs') %>
+   
+
+       
+      <br>
+
+      <!-- Start of image-->
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <img src="IMG/Me.jpg" alt="Me" width="10%">
+
+          </div>
+        </div>
+      </div>
+
+      <!-- End of image-->
+
+      <br>
+
+      <!-- Start contact form-->
+      <div class="container">
+        <div class="row">
+          <div class="col-5 text-center contactform p-5">
+            <form>
+              <h3 class="md-4">Contact us</h3>
+              <input type="text" class="form-control md-4" id="fname" aria-describedby="firtsname" placeholder="First Name">
+              <input type="text" class="form-control md-4" id="lname" aria-describedby="lastname" placeholder="Last Name">
+              <input type="text" class="form-control md-4" id="email" aria-describedby="emailHelp" placeholder="Email">
+              <label for="selection" class="form-label">Reason for contact:</label>
+              <select class="form-select md-4" aria-label="Default select example">
+                <option selected value="1">Bug</option>
+                <option value="2">Opportunity</option>
+                <option value="3">Connect</option>
+              </select>
+              <textarea class="form-control md-4" id="exampleFormControlTextarea1" rows="3" placeholder="">Comment</textarea>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+              
+            </form>
+          </div>
+          <div class="col-5">
+            <!--Google map-->
+<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 100%">
+  <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="width: 100%; height: 100%;" allowfullscreen></iframe>
+</div>
+
+<!--Google Maps-->
+          </div>
+        </div>
+      </div>
+      
+      <!-- End contact form-->
+
+      <br>
+
+      <!--Start of Info-->
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h5>Information</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <img src="IMG/GitHub-Mark-Light-64px.png" alt="GitHub">
+            </div>
+            <div class="col text-center">
+              <img src="IMG/In-White-72.png" alt="linkedin">
+            </div>
+          </div>
+        </div>
+      <!--End of Info-->
+      
+      <br>
+      <br>
+      <br>
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
