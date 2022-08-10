@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', route);
 
-mongoose.connect("mongodb+srv://seanmac11:NJIuhbvgy1122@cluster0.brdjeem.mongodb.net/portfolioDB", {useNewURLParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://seanmac11:NJIuhbvgy1122@cluster0.brdjeem.mongodb.net/PortfolioDB", {useNewURLParser: true, useUnifiedTopology: true})
 .then(() => {
     app.listen(3000, () =>{
         console.log("server is running on 3000")

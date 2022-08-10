@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-var contactsSchema = mongoose.Schema({
+var constactsSchema = mongoose.Schema({
     fname: {
         type: String
     },
@@ -18,4 +18,4 @@ var contactsSchema = mongoose.Schema({
     },
 });
 
-module.exports = mongoose.model('Contacts', contactsSchema)
+module.exports = mongoose.model('Contacts', constactsSchema)
